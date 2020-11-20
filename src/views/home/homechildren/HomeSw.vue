@@ -4,7 +4,7 @@
     <swiper>
 		<swiper-item v-for="item in banners" :key="item.index">
 			<a :href="item.link">
-				<img :src="item.image">
+				<img :src="item.image" @load="imgload">
 			</a>
 		</swiper-item>
 	</swiper>
@@ -29,18 +29,23 @@ components: {
     SwiperItem
 },
 data() {
-//这里存放数据
 return {
-
+isLoad:false
 };
 },
-//监听属性 类似于data概念
-computed: {},
-//监控data中的数据变化
-watch: {},
-//方法集合
-methods: {
 
+computed: {},
+
+watch: {},
+
+methods: {
+imgload(){
+    if (!this.isLoad) {
+        this.$emit('swImgload')
+        this.isLoad=true
+    }
+    
+}
 },
 //生命周期 - 创建完成（可以访问当前this实例）
 created() {

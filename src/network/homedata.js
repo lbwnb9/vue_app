@@ -6,3 +6,14 @@ export function  getHomeData() {
         }
     )
 }
+export function getGoodsData(type,page) {
+    return request(
+        {
+            url: '/home/data',
+            params:{
+                type,
+                page
+            }
+        }
+    )
+}
