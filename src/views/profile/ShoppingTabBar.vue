@@ -1,6 +1,6 @@
 <template>
 	<tab-bar>
-		<tab-bar-item path="/home">
+		<tab-bar-item >
 			<template #item-icon>
 				<img src="@/assets/img/home.svg" alt="">
 			</template>
@@ -11,7 +11,7 @@
 				<div>主页</div>
 			</template>
 		</tab-bar-item>
-		<tab-bar-item path="/sort">
+		<tab-bar-item >
 			<template #item-icon>
 				<img src="@/assets/img/classify .svg" alt="">
 			</template>
@@ -22,7 +22,7 @@
 				<div>分类</div>
 			</template>
 		</tab-bar-item>
-		<tab-bar-item path="cart">
+		<tab-bar-item >
 			<template #item-icon>
 				<img src="@/assets/img/shoppingcart.svg" alt="">
 			</template>
@@ -33,7 +33,7 @@
 				<div>购物车</div>
 			</template>
 		</tab-bar-item>
-		<tab-bar-item path="/profile">
+		<tab-bar-item >
 			<template #item-icon>
 				<img src="@/assets/img/mine.svg" alt="">
 			</template>
@@ -51,13 +51,10 @@
 	import TabBar from "@/components/common/tabbar/TabBar.vue"
 	import TabBarItem from "@/components/common/tabbar/TabBarItem.vue"
 	export default {
-		name: 'MainTabBar',
+		name: 'ShoppingTabBar',
 		components: {
 			TabBar,
 			TabBarItem
 		}
 	}
 </script>
-
-<style>
-</style>

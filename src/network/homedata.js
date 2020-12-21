@@ -17,3 +17,20 @@ export function getGoodsData(type,page) {
         }
     )
 }
+export function getCartData() {
+    return request(
+        {
+            url: '/category'
+        }
+    )
+}
+export function getSubCartData(maitKey) {
+    return request(
+        {
+            url: '/subcategory',
+            params:{
+                maitKey
+            }
+        }
+    )
+}

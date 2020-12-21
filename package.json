@@ -10,10 +10,11 @@
     "axios": "^0.21.0",
     "better-scroll": "^2.0.5",
     "core-js": "^2.6.5",
-    "element-ui": "^2.14.1",
+    "vant": "^2.11.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuetify": "^2.3.17"
+    "vuetify": "^2.3.17",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.1",

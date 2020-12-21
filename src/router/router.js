@@ -5,7 +5,7 @@ const cate = () => import('../views/category/cate.vue')
 const shopping = () => import('../views/shoppingcart/shopping.vue')
 const profile = () => import('../views/profile/profile.vue')
 const detail = () => import('../views/detail/detail.vue')
-
+const statement = () => import('../views/statement/statement.vue')
 Vue.use(Router)
 
 export default new Router({
@@ -29,12 +29,16 @@ export default new Router({
         component:shopping
       },
       {
-        path:'/my',
+        path:'/profile',
         component:profile
       },
       {
         path:'/detail/:iid',
         component:detail
+      },
+      {
+        path:'/statement',
+        component:statement
       }
   ]
 })
